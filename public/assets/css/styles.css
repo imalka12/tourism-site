@@ -1,0 +1,2159 @@
+#side-menu,
+.side-menu-overlay {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  display: none;
+}
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+#side-menu {
+  width: 300px;
+  right: -300px;
+  overflow-y: auto;
+  z-index: 1035;
+  background: #fff;
+  padding: 20px 30px;
+  color: #333;
+  transition: 0.4s;
+}
+
+body.side-menu-visible #side-menu {
+  transform: translateX(-300px);
+}
+
+#side-menu .contents {
+  margin-top: 15px;
+}
+
+#side-menu .nav-link {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+#side-menu .nav-link:hover {
+  opacity: 0.8;
+}
+
+#side-menu .close {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.side-menu-overlay {
+  left: 0;
+  min-width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+#side-menu.side-menu-left {
+  right: auto;
+  left: -300px;
+}
+
+body.side-menu-visible #side-menu.side-menu-left {
+  transform: translateX(300px);
+}
+
+.header-top-area {
+  margin-top: 15px;
+}
+
+.fa.fa-facebook.header-top-icons {
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 4px 7px;
+  margin-right: 8px;
+}
+
+.fa.fa-envelope.header-top-icons {
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 4px 5px;
+  margin-right: 8px;
+}
+
+.fa.fa-twitter.header-top-icons {
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 4px 5px;
+  margin-right: 8px;
+}
+
+.fa.fa-youtube-play.header-top-icons {
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 4px 5px;
+  margin-right: 8px;
+}
+
+.fa.fa-instagram.header-top-icons {
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 4px 5px;
+  margin-right: 8px;
+}
+
+.btn.btn-primary.dropdown-toggle.language-button {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.fa.fa-phone.header-phone-icon {
+  background-color: #609ff8;
+  padding: 2px;
+}
+
+.fa.fa-envelope-o.header-email-icon {
+  background-color: #f8b260;
+  padding: 2px;
+  color: #fff;
+}
+
+.col-5.col-md-3.header-top-area-right {
+  margin-top: 20px;
+}
+
+.col-md-2.header-top-area-right {
+  margin-top: 20px;
+}
+
+.nav-area {
+  background-color: #e9ebea;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(39, 97, 2, 1);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(39, 97, 2, 1);
+}
+
+.col-6.col-sm-6.col-md-3.header-top-area-right {
+  margin-top: 20px;
+}
+
+.banner-search-heading-area {
+  background-color: #769860;
+  border-left: 3px solid #d2ad4c;
+}
+
+.banner-search-heading {
+  padding-top: 13px;
+  padding-left: 10px;
+  color: #fff;
+  padding-bottom: 12px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.booking-form-button-area {
+  /*background-color: #638847;*/
+  border-radius: 0px;
+}
+
+.btn.btn-primary.dropdown-toggle.text-uppercase.booking-form-button-area {
+  padding-top: 15px;
+}
+
+.btn.btn-primary.dropdown-toggle.text-uppercase.booking-form-button {
+  text-align: left;
+  padding: 15px;
+}
+
+.fa.fa-search.booking-search-icon {
+  padding-top: 13px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .banner-content-area {
+    margin-top: -220px;
+    z-index: 9;
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-content-area {
+    margin-top: -170px;
+    z-index: 9;
+    position: relative;
+  }
+
+  #tour-packages-carousel-1 .item {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .testimonial-left-content-area {
+    margin-left: 0px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-content-area {
+    margin-top: -290px;
+    z-index: 9;
+    position: relative;
+  }
+}
+
+.btn.btn-primary.dropdown-toggle.text-left.booking-form-button {
+  background-color: #638847;
+  border-radius: 0px;
+  /*padding: 16px;*/
+  border-color: #638847;
+  /*border-bottom: 1px solid #fff;*/
+}
+
+.container-fluid.header-top {
+  display: block;
+}
+
+.container.book-tour-section {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.container.home-about-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.more-button {
+  color: #00af87;
+}
+
+.more-button:hover {
+  color: #00af87;
+}
+
+.col.attractions-left-text-area {
+  border-left: 3px solid #d2ad4c;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.attractions-left-text-area {
+  color: #ffffff;
+  font-size: 35px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 100;
+}
+
+.attrections-sl-text {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px #1e1e1e;
+}
+
+.col-lg-6.visit-tambapanni {
+  margin-top: 25px;
+}
+
+.attractions-slider-text-bg {
+  background-color: rgba(104, 104, 104, 0.72);
+  padding: 10px 20px;
+  margin-top: -157px;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .btn.btn-lg.findmore-white:hover {
+    border-top: 1px solid #fff;
+    width: 175px;
+    border-bottom: 1px solid #fff;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    /*letter-spacing: 3px;*/
+  }
+}
+
+@media (min-width: 320px) {
+  .btn.btn-lg.findmore-white:hover {
+    border-top: 1px solid #fff;
+    width: 40%;
+    border-bottom: 1px solid #fff;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    /*letter-spacing: 3px;*/
+  }
+}
+
+@media (min-width: 576px) {
+  .btn.btn-lg.findmore-white:hover {
+    border-top: 1px solid #fff;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    /*letter-spacing: 3px;*/
+  }
+}
+
+@media (min-width: 768px) {
+  .btn.btn-lg.findmore-white:hover {
+    border-top: 1px solid #fff;
+    width: 175px;
+    border-bottom: 1px solid #fff;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    /*letter-spacing: 3px;*/
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn.btn-lg.findmore-white {
+    border-top: 1px solid #fff;
+    width: 175px;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 320px) {
+  .btn.btn-lg.findmore-white {
+    border-top: 1px solid #fff;
+    width: 70%;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn.btn-lg.findmore-white {
+    border-top: 1px solid #fff;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn.btn-lg.findmore-white {
+    border-top: 1px solid #fff;
+    width: 175px;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+.carousel-indicators {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #a7a7a7;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  border-radius: 100%;
+}
+
+.attractions-left-bottom {
+  position: absolute;
+  bottom: 45px;
+}
+
+.container.home-services-section {
+  padding-top: 50px;
+  /*padding-bottom: 50px;*/
+}
+
+.la.la-book.services-icon {
+  font-size: 50px;
+  border: 1px solid #898989;
+  border-radius: 50%;
+  padding: 10px;
+  color: #898989;
+  text-align: center;
+  /*margin-left: 40px;*/
+}
+
+.fas.fa-clipboard-list.services-icon {
+  font-size: 50px;
+  border: 1px solid #898989;
+  border-radius: 50%;
+  padding: 10px 18px;
+  color: #898989;
+  text-align: center;
+  /*margin-left: 40px;*/
+}
+
+.fas.fa-user-tie.services-icon {
+  font-size: 50px;
+  border: 1px solid #898989;
+  border-radius: 50%;
+  padding: 10px 15px;
+  color: #898989;
+  text-align: center;
+  /*margin-left: 40px;*/
+}
+
+.typcn.typcn-chart-bar.services-icon {
+  font-size: 50px;
+  border: 1px solid #898989;
+  border-radius: 50%;
+  padding: 4px 13px;
+  color: #898989;
+  text-align: center;
+  /*margin-left: 40px;*/
+}
+
+.material-icons.services-icon {
+  font-size: 50px;
+  border: 1px solid #898989;
+  border-radius: 50%;
+  padding: 10px;
+  color: #898989;
+  text-align: center;
+  /*margin-left: 40px;*/
+}
+
+.la.la-money.services-icon {
+  font-size: 50px;
+  border: 1px solid #898989;
+  border-radius: 50%;
+  padding: 10px;
+  color: #898989;
+  text-align: center;
+  /*margin-left: 40px;*/
+}
+
+@media (max-width: 320px) {
+  .btn.btn-lg.findmore-button {
+    border-top: 1px solid #898989;
+    width: 75%;
+    border-bottom: 1px solid #898989;
+    color: #898989;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn.btn-lg.findmore-button {
+    border-top: 1px solid #898989;
+    width: 75%;
+    border-bottom: 1px solid #898989;
+    color: #898989;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn.btn-lg.findmore-button:hover {
+    border-top: 1px solid #898989;
+    width: 175px;
+    border-bottom: 1px solid #898989;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    /*letter-spacing: 7px;*/
+  }
+}
+
+@media (min-width: 768px) {
+  .btn.btn-lg.findmore-button {
+    border-top: 1px solid #898989;
+    width: 25%;
+    border-bottom: 1px solid #898989;
+    color: #898989;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn.btn-lg.findmore-button {
+    border-top: 1px solid #898989;
+    width: 175px;
+    border-bottom: 1px solid #898989;
+    color: #898989;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+.container.holiday-package-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .home-package-text-area {
+    position: absolute;
+    z-index: 10;
+    margin-top: -217px;
+    padding: 10px 48px;
+    bottom: 25px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-package-text-area {
+    position: absolute;
+    z-index: 10;
+    margin-top: -217px;
+    padding: 10px 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-package-text-area {
+    position: absolute;
+    z-index: 10;
+    margin-top: -200px;
+    padding: 10px 50px;
+  }
+}
+
+.text-center.home-package-text-area-sm {
+  position: relative;
+  z-index: 10;
+  margin-top: -135px;
+  padding: 0px 15px;
+}
+
+.btn.btn-lg.text-uppercase.package-findmore:hover {
+  border-top: 1px solid #fff;
+  width: 175px;
+  border-bottom: 1px solid #fff;
+  color: #d2ad4c;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  /*letter-spacing: 1px;*/
+}
+
+.btn.btn-lg.text-uppercase.package-findmore {
+  border-top: 1px solid #fff;
+  width: 175px;
+  border-bottom: 1px solid #fff;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.active.ba.packages-indicators {
+  background-color: #b3b3b3 !important;
+}
+
+.packages-indicators {
+  background-color: #000000;
+}
+
+.ba.packages-indicators {
+  background-color: #b3b3b3;
+}
+
+.container.home-guide-srilanka-sction {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.col.home-package-area {
+  border-left: 3px solid #d2ad4c;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 576px) {
+  .text-center.home-monthly-package-text-area {
+    position: relative;
+    z-index: 10;
+    margin-top: -290px;
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-center.home-monthly-package-text-area {
+    position: relative;
+    z-index: 10;
+    margin-top: -310px;
+    padding: 10px 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-center.home-monthly-package-text-area {
+    position: relative;
+    z-index: 10;
+    margin-top: -290px;
+    padding: 10px 50px;
+  }
+}
+
+.col.bottom-options-col {
+  border-left: 3px solid #d2ad4c;
+  background-color: #e8e8e8;
+}
+
+.bottom-options-text:hover {
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #d2ad4c;
+}
+
+.bottom-options-text {
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.container.logo-foot-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+}
+
+.banner-search-heading-m {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 200;
+}
+
+#side-menu {
+  width: 100%;
+  right: -300px;
+  overflow-y: auto;
+  z-index: 1035;
+  background: #769860;
+  padding: 20px 30px;
+  color: #fff;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.col-12.col-sm-12.col-lg-4.bottom-options-col {
+  border-left: 3px solid #d2ad4c;
+  background-color: #e8e8e8;
+}
+
+@media (max-width: 576px) {
+  .footer-heading {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #8c8c8c;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-heading {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #8c8c8c;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-heading {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: normal;
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-text {
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    color: #8c8c8c;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-text {
+    font-family: "Titillium Web", sans-serif;
+    text-align: left;
+    color: #8c8c8c;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-text {
+    font-family: "Titillium Web", sans-serif;
+    color: #8c8c8c;
+    font-size: 14px;
+    list-style: none;
+    /*margin-bottom: 15px;*/
+  }
+}
+
+.col-lg-5.header-top-social-area {
+  margin-right: -15px;
+}
+
+.col-lg-7.header-top-right {
+  padding-right: 0px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+}
+
+.col-lg-5.header-top-right {
+  padding-right: 0px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 300px) {
+  .text-center.banner-heading {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #1e1e1e;
+  }
+}
+
+@media (min-width: 576px) {
+  .text-center.banner-heading {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    font-size: 58px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #1e1e1e;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-center.banner-heading {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    font-size: 58px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #1e1e1e;
+  }
+}
+
+.col-lg-3.banner-search-area {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.col-lg-4.banner-search-area {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.dropdown.booking-form-dropdown {
+  padding: 10px;
+}
+
+.booking-form-dropdown {
+  padding: 16px 10px 16px 10px;
+}
+
+.select-field {
+  width: 84%;
+  background-color: #0F766E;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+.select-dropdown {
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.text-uppercase.d-block.booking-form-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.text-uppercase.d-block.booking-form-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+}
+
+.text-uppercase.booking-form-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.text-uppercase.booking-form-heading-m {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media (min-width: 320px) {
+  .btn.btn-primary.dropdown-toggle.text-left.booking-form-button::after {
+    margin-left: 5.255em;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn.btn-primary.dropdown-toggle.text-left.booking-form-button::after {
+    margin-left: 11.255em;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn.btn-primary.dropdown-toggle.text-left.booking-form-button::after {
+    margin-left: 32.255em;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn.btn-primary.dropdown-toggle.text-left.booking-form-button::after {
+    margin-left: 0.255em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn.btn-primary.dropdown-toggle.text-left.booking-form-button::after {
+    margin-left: 10px;
+  }
+}
+
+.col-lg-1.text-center.banner-search-area {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.text-uppercase.home-about-heading {
+  font-family: "Titillium Web", sans-serif;
+  height: 25px;
+  font-size: 18px;
+}
+
+.review-name {
+  font-size: 20px;
+  color: #00af87;
+}
+
+.reviewed-date {
+  font-size: 12px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.container.home-attractions-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container.home-bottom-button-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container.footer-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.popular-activity-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.home-packages-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  color: #898989;
+}
+
+.home-packages-heading {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+  color: #a6a6a6;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #1e1e1eb3;
+}
+
+.home-travel-tip-heading {
+  color: #a6a6a6;
+  font-size: 24px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+
+.home-travel-tip-subheading {
+  font-size: 18px;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+
+.home-travel-tip-text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.home-popular-activities-heading {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 32px;
+  text-align: center;
+  text-shadow: 0 0 1px #1e1e1eb3;
+}
+
+.home-popular-activities-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+
+.home-popular-activities-text {
+  font-size: 14px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.top-header-bar {
+  background-color: #0F766E;
+}
+
+.col.top-header-left {
+  padding: 15px 0;
+}
+
+.top-header-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  padding-left: 10px;
+  font-weight: 100;
+}
+
+@media (max-width: 576px) {
+  .top-header-subheading {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+  }
+}
+
+.top-header-heading {
+  color: #ffffff;
+  font-size: 32px;
+  font-family: "Alfa Slab One", cursive;
+  padding-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  .top-header-heading {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Alfa Slab One", cursive;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-header-heading {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Alfa Slab One", cursive;
+  }
+}
+
+.top-header-right {
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+}
+
+.breadcrumb-text {
+  color: #000000;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #d2ad4c;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+a:hover {
+  color: #a6a6a6;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.tour-package-left-area {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.tour-package-right-area {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.tour-package-text {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.tour-package-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.attractions-col {
+  border-left: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+  .attractions-col {
+    border-left: 1px solid #000;
+    margin-left: 15px;
+  }
+}
+
+.exclude-col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.itenerary-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.package-excurtions-text {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+
+.top-header-area {
+  border-left: 3px solid #374151;
+  margin: 8px 0;
+}
+
+.inner-other-packages-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 32px;
+  color: #a6a6a6;
+}
+
+.inner-other-packages-heading {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 32px;
+  color: #a6a6a6;
+}
+
+.inner-other-package-area {
+  border-left: 3px solid #d2ad4c;
+  margin-left: 50px;
+}
+
+.package-attractions-list {
+  display: block;
+  text-decoration: none;
+}
+
+.destination-thingstodo-img-area {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.destination-package-text-area {
+  position: relative;
+  z-index: 10;
+  margin-top: -92px;
+}
+
+@media (max-width: 768px) {
+  .destination-package-text-area {
+    position: relative;
+    z-index: 10;
+    margin-top: -92px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn.btn-lg.text-uppercase.destination-findmore-button:hover {
+    border-top: 1px solid #898989;
+    width: 100%;
+    border-bottom: 1px solid #898989;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    letter-spacing: 7px;
+  }
+}
+
+.btn.btn-lg.text-uppercase.destination-findmore-button:hover {
+  border-top: 1px solid #898989;
+  width: 62%;
+  border-bottom: 1px solid #898989;
+  color: #d2ad4c;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+  letter-spacing: 7px;
+}
+
+@media (min-device-width: 300px) and (max-device-width: 575px) {
+  .btn.btn-lg.text-uppercase.destination-findmore-button:hover {
+    border-top: 1px solid #898989;
+    width: 100%;
+    border-bottom: 1px solid #898989;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    letter-spacing: 7px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn.btn-lg.text-uppercase.destination-findmore-button:hover {
+    border-top: 1px solid #898989;
+    width: 100%;
+    border-bottom: 1px solid #898989;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    letter-spacing: 7px;
+  }
+}
+
+.btn.btn-lg.text-uppercase.destination-findmore-button {
+  border-top: 1px solid #898989;
+  width: 35%;
+  border-bottom: 1px solid #898989;
+  color: #898989;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+}
+
+@media (min-device-width: 300px) and (max-device-width: 575px) {
+  .btn.btn-lg.text-uppercase.destination-findmore-button {
+    border-top: 1px solid #898989 !important;
+    width: 95% !important;
+    border-bottom: 1px solid #898989 !important;
+    color: #898989;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn.btn-lg.text-uppercase.destination-findmore-button {
+    border-top: 1px solid #898989;
+    width: 60%;
+    border-bottom: 1px solid #898989;
+    color: #898989;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn.btn-lg.text-uppercase.destination-findmore-button {
+    border-top: 1px solid #898989;
+    width: 44%;
+    border-bottom: 1px solid #898989;
+    color: #898989;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+}
+
+.destination-thingstodo-heading {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: normal;
+  font-size: 25px;
+  text-shadow: 0 0 1px #1e1e1e;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  .destination-thingstodo-heading {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: 0 0 1px #1e1e1e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .btn.btn-lg.text-uppercase.destination-thingstodo-findmore:hover {
+    border-top: 1px solid #fff;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    color: #d2ad4c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+.btn.btn-lg.text-uppercase.destination-thingstodo-findmore:hover {
+  border-top: 1px solid #fff;
+  width: 70%;
+  border-bottom: 1px solid #fff;
+  color: #d2ad4c;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.btn.btn-lg.text-uppercase.destination-thingstodo-findmore {
+  border-top: 1px solid #fff;
+  width: 75%;
+  border-bottom: 1px solid #fff;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 425px) {
+  .btn.btn-lg.text-uppercase.destination-thingstodo-findmore {
+    border-top: 1px solid #fff;
+    width: 85%;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 0px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+.activity-locations-text-area {
+  position: relative;
+  z-index: 10;
+  margin-top: -92px;
+}
+
+.top-destination-findmore-button {
+  border-top: 1px solid #898989;
+  width: 64%;
+  border-bottom: 1px solid #898989;
+  color: #898989;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.top-destination-findmore-button:hover {
+  border-top: 1px solid #898989;
+  width: 75%;
+  border-bottom: 1px solid #898989;
+  color: #d2ad4c;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 0px;
+  font-size: 14px;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+.inner-content-text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+}
+
+.travelguide-icon-heading {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #262626;
+  text-transform: uppercase;
+}
+
+.travelguide-icon {
+  margin-top: 20px;
+}
+
+.travelguide-left-column {
+  border-right: 1px solid #dddddd;
+}
+
+.itinerary-text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+}
+
+.itinerary-text-area {
+  padding-top: 10px;
+}
+
+@media (min-width: 1200px) {
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+  }
+}
+
+.text-center.tour-by-month-heading {
+  position: relative;
+  z-index: 10;
+  margin-top: -135px;
+  padding: 0px 15px;
+}
+
+@media (min-width: 576px) {
+  .text-center.tour-by-month-heading {
+    position: relative;
+    z-index: 10;
+    margin-top: -80px;
+    padding: 0px 15px;
+  }
+}
+
+.contact-details-area {
+  padding: 50px 20px;
+}
+
+.contact-text {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  padding-left: 22px;
+}
+
+.contact-heading {
+  font-size: 17px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.team-img {
+  border-radius: 50%;
+}
+
+.header-top-social-header {
+  color: #636262;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.header-top-social-icons {
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-top-translate-area {
+  border-left: 1px solid #f3d225;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+
+.header-top-translate-area_right {
+  border-right: 1px solid #f3d225;
+  padding-top: 15px;
+  padding-bottom: 7px;
+  margin-top: 10px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px !important;
+  font-weight: 600;
+  text-align: right;
+  padding-left: 30px;
+}
+
+.header-topright-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  color: #e9563b;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.header-top-right-icon {
+  padding-right: 5px;
+  padding-top: 8px;
+  width: 28px;
+}
+
+.header-top-contact {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  /*border-bottom: 1px solid #f3d225;*/
+  border-width: thin;
+  float: right;
+  font-size: 25px;
+}
+
+.header-top-contact-area {
+  margin-top: -20px;
+}
+
+.header-top-email {
+  font-family: "Titillium Web", sans-serif;
+  color: #6a6331;
+  font-size: 19px;
+  font-weight: bold;
+  float: right;
+  padding-bottom: 15px;
+  /*letter-spacing: 1px;*/
+  padding-right: 0px;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1350px;
+  }
+}
+
+.main-menu-area {
+  margin-top: -28px;
+}
+
+.logo-new {
+  margin-left: 20px;
+}
+
+.icon150 {
+  width: 150px;
+}
+
+.headertop-space {
+  margin-top: 0px;
+}
+
+.header-top-left {
+  margin-top: 14px;
+}
+
+.g-translator-icon {
+  float: left;
+}
+
+.nav-home-image {
+  width: 20px;
+}
+
+.home-whyus-text:hover {
+  font-family: "Titillium Web", sans-serif;
+  padding: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #000;
+}
+
+.home-whyus-text {
+  font-family: "Titillium Web", sans-serif;
+  padding: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.home-whyus-area {
+  margin-bottom: 30px;
+}
+
+.text-center.home-whyus-bottom {
+  padding-top: 35px;
+}
+
+.testimonial-left-area {
+  /*padding-top: 15px;*/
+  margin-bottom: 5px;
+}
+
+.tesimonial-name {
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+}
+
+.testimonial-heading {
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  margin-top: -15px;
+}
+
+.testimonial-content {
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+}
+
+.testimonial-hr-line {
+  background-color: #ecd030;
+  margin-top: 30px;
+}
+
+.home-packages-heading-half {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 35px;
+  color: #a6a6a6;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #1e1e1eb3;
+}
+
+.home-followus-heading {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 32px;
+  color: #a6a6a6;
+  font-weight: normal;
+  /*line-height: 40px;*/
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #1e1e1eb3;
+  padding-top: 55px;
+}
+
+.home-blog-heading {
+  color: #000000;
+  font-size: 24px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: left !important;
+}
+
+.home-blog-text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.csr-area {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-logo-heading {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  text-align: left;
+}
+
+.home-testimonial-heading-area {
+  border-left: 3px solid #d2ad4c;
+  margin-left: 30px;
+  margin-bottom: 24px;
+}
+
+.testimonial-left-content-area {
+  padding-top: 17px;
+  background-color: #8fb1b2;
+  margin-left: 15px;
+}
+
+.container.testimonial-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.csr-slider-text-bg {
+  background-color: rgba(104, 104, 104, 0.72);
+  padding: 10px 20px;
+  margin-top: -273px;
+  position: absolute;
+}
+
+.dropdown-toggle.booking-form-button::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 10px solid;
+  border-right: 10px solid transparent;
+  border-bottom: 0;
+  border-left: 10px solid transparent;
+}
+
+.tour-month-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  color: #898989;
+  font-weight: 200;
+}
+
+.tour-month-heading {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 35px;
+  color: #a6a6a6;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.month-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.month-text {
+  font-family: "Titillium Web", sans-serif;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.month-conent-section {
+  background-color: #efefef;
+  padding-bottom: 15px;
+}
+
+.offer-tag {
+  position: absolute;
+  right: 20px;
+}
+
+.offer-text {
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -80px;
+  line-height: 25px;
+}
+
+#back-top {
+  display: inline-block;
+  background-color: #d2ad4c !important;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#back-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#back-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#back-top:active {
+  background-color: #555;
+}
+
+#back-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*--- side menu ---*/
+
+.side-menu {
+  width: 14em;
+  height: auto;
+  margin: 4em auto 0;
+  font-size: 10px;
+  line-height: 2em;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: fixed;
+  top: 200px;
+  right: -85px;
+  z-index: 15000;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-menu ul li {
+  display: block;
+  background-color: #59833e;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.5s, background-color 0.5s, color 0.5s;
+  transition: transform 0.5s, background-color 0.5s, color 0.5s;
+}
+
+/* special offers special color*/
+.side-menu ul li.spoff {
+  background-color: #eeb304;
+}
+
+/*slide left on hover*/
+.side-menu ul li:hover {
+  background-color: #339966; /*you can make different colors depending on the nth-child like above*/
+  -webkit-transform: translateX(-8em);
+  transform: translateX(-8em); /*equal to left in the .side-menu*/
+}
+
+.side-menu ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-menu ul li span {
+  display: block;
+  position: absolute;
+  font-size: 1em;
+  line-height: 2em;
+  height: 2em;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+  right: 0.16666666666667em;
+  color: #f8f6ff;
+}
+
+.side-menu ul li span.slid-txt {
+  font-size: 2em;
+  text-align: left;
+  width: 100%;
+  padding: 5px 5px 5px 50px;
+  display: none;
+}
+
+.side-menu ul li:hover span.slid-txt {
+  display: block;
+}
+
+/* from site inlined stylesheet */
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  box-shadow: none;
+}
+
+.transparent-button:focus,
+.transparent-button:active,
+.transparent-button:hover {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  box-shadow: none;
+}
+
+#back-top {
+  display: inline-block;
+  background-color: #ef7c3f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#back-top::after {
+  display: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* gtranslate element */
+.goog-te-menu-value:hover {
+  text-decoration: none !important;
+}
+
+.goog-te-gadget-simple {
+  border: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  font-size: 15px;
+}
+
+.ttll-msgbar {
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+  font-weight: 300;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100000;
+}
+
+.ttll-msgbar.ttll-succcess {
+  background-color: #579a2d;
+  border-bottom: 1px solid #005d00;
+  color: #ffffff;
+}
+
+.ttll-msgbar.ttll-error {
+  width: 100%;
+  border-radius: 0px;
+  background-color: #d42d2d;
+  border: none;
+  border-bottom: 1px solid #ff4431;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 300;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100000;
+}
+
+#homepage_tour_search_form .select-field {
+  width: 100%;
+}
+
+#home-transportation-nav .nav-item .nav-link {
+  padding: 0px;
+}
+
+.fa_golden_star {
+  color: #ffd700;
+  font-size: 1.3em;
+}
+
+/*Chamikara Styles*/
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #0F766E !important;
+  color: #fff;
+}
+
+.header-menu-space {
+  padding-top: 0px;
+}
+
+.left-header-space {
+  border-top: 1px solid #f3d225;
+  margin-top: 20px;
+}
+
+.right-header-space {
+  border-top: 1px solid #f3d225;
+}
+
+.footer-bottom-section-line {
+  border-right: 1px solid #f3d225;
+}
+
+.banner-form-heading-area {
+  padding-right: 0px;
+}
+
+.banner-form-own-tour {
+  padding-left: 0px;
+  margin-left: -10px;
+}
+
+.banner-form-own-tour-heading {
+  padding-top: 18px;
+  padding-left: 5px;
+  color: #fff;
+  padding-bottom: 17px;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.banner-form-own-tour-subheading {
+  font-size: 16px;
+  line-height: 10px;
+  padding-left: 9px;
+  font-weight: bold;
+}
+
+.home-banner-search-area {
+  margin-left: 35px;
+}
+
+.footer-hr {
+  background-color: #f3d225;
+}
+
+.footer-hr-area {
+  padding-top: 25px;
+}
+
+@media screen and (min-device-width: 1367px) and (max-device-width: 1440px) {
+  .banner-form-own-tour {
+    margin-left: 10px;
+  }
+
+  .banner-form-own-tour-heading {
+    padding-top: 31px;
+    padding-left: 5px;
+    color: #fff;
+    padding-bottom: 20px;
+    line-height: 17px;
+    font-size: 14px;
+    text-align: left;
+    padding-right: 10px;
+    text-decoration: none;
+  }
+
+  .banner-form-own-tour-subheading {
+    font-size: 14px;
+    line-height: 10px;
+    padding-left: 8px;
+    font-weight: bold;
+  }
+
+  .booking-form-dropdown {
+    padding: 16px 3px 16px 10px;
+  }
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1366px) {
+  .banner-form-own-tour {
+    margin-left: 10px;
+  }
+
+  .banner-form-own-tour-heading {
+    padding-top: 30px;
+    padding-left: 4px;
+    color: #fff;
+    padding-bottom: 25px;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: left;
+    padding-right: 10px;
+    text-decoration: none;
+  }
+
+  .banner-form-own-tour-subheading {
+    font-size: 13px;
+    line-height: 10px;
+    padding-left: 9px;
+    font-weight: bold;
+  }
+
+  .home-banner-search-area {
+    margin-left: 22px;
+  }
+
+  .booking-form-dropdown {
+    padding: 16px 3px 16px 10px;
+  }
+
+  .banner-search-heading {
+    padding-left: 8px;
+  }
+
+  .booking-form-dropdown {
+    padding: 16px 0px 16px 6px;
+  }
+}
+.heading_Findoutmore {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: normal;
+  font-size: 25px;
+  text-shadow: 0px 0px 20px rgb(0 0 0);
+}
+
+.aboutUs_whyUs_icons {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.aboutUs_whyUs_icons img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.aboutUs_whyUs_icons_p {
+  font-family: "Titillium Web", sans-serif;
+  color: #898989;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-img {
+  padding: 20px;
+  font-size: 30px;
+} */
