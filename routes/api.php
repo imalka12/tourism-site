@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('/get-tour-types', 'Web\TourTypeController@getAllTourTypes')->name('app.getAllTourTypes');
+Route::get('/get-activities', 'Web\ActivityController@getAllActivities')->name('app.getAllActivities');
