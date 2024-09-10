@@ -99,6 +99,6 @@ class ActivityController extends Controller
     function getAllActivities() {
         $activities = Activity::all();
 
-        return response()->json(['data', $activities]);
+        return response()->json($activities);
     }
 }

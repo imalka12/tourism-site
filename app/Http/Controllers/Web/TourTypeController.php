@@ -37,6 +37,6 @@ class TourTypeController extends Controller
     function getAllTourTypes() {
         $tourTypes = TourType::all();
 
-        return response()->json(['data', $tourTypes]);
+        return response()->json($tourTypes);
     }
 }
