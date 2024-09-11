@@ -298,7 +298,6 @@
             });
       }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ56wuV8BNG7nSohdnE4Lw8VB-aSoaLvM&callback=initMap">
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ config('voyager.googlemaps.key') }}&callback=initMap">
     </script>
     @endpush

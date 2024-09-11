@@ -268,6 +268,6 @@
     </script>
     {{-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ56wuV8BNG7nSohdnE4Lw8VB-aSoaLvM&callback=initMap"
         type="text/javascript"></script> --}}
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCDLozAyhz46pnzIDutVVgLX9JlRuZPro&callback=initMap"
+    <script defer src="https://maps.googleapis.com/maps/api/js?key={{ config('voyager.googlemaps.key') }}&callback=initMap"
         type="text/javascript"></script>
 @endpush

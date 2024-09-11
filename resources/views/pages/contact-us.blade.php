@@ -3,7 +3,7 @@
 @section('page-content')
 <div class="container">
     <div class="row" style="/*padding-top: 50px;*/padding-bottom: 50px;">
-        <div class="col-md-4 col-lg-4 col-xl-7"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.380273751567!2d79.88966541431851!3d7.0818373183863335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f0b6137f4615%3A0x19acc8a2354ed665!2sThe%20Travel%20Lanka%20Leisure!5e0!3m2!1sen!2slk!4v1579112908711!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        <div class="col-md-4 col-lg-4 col-xl-7"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.4945839340235!2d80.35143184593632!3d7.493129370076364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a0ea110d8a7%3A0x648eb720413d7743!2s575%20Kurunegala%20-%20Puttalam%20Rd%2C%20Kurunegala%2060000!5e0!3m2!1sen!2slk!4v1725991333933!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="col-md-4 col-lg-4 col-xl-5">
             <div class="row">
                 <div class="col inner-other-package-area" style="/*padding-bottom: 15px;*/"><span class="inner-other-packages-subheading">Explore Thaprobana (Pvt) Ltd<br></span><span class="inner-other-packages-heading">Get In Touch With Us</span></div>
