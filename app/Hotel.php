@@ -16,7 +16,7 @@ class Hotel extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'description', 'image', 'gallery_id', 'star_rating', 'location', 'slug', 'meta_description', 'meta_keywords' ,'city_id'];
+    protected $fillable = ['name', 'description', 'image', 'gallery_id', 'star_rating', 'location', 'slug', 'meta_description', 'meta_keywords', 'city_id', 'hotel_type'];
 
     /**
      * Hotel belongs to Gallery.
@@ -36,5 +36,15 @@ class Hotel extends Model
     public function city()
     {
         return $this->belongsTo(City::class);
+    }
+
+    /**
+     * Hotel has many Rooms.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function hotelRooms()
+    {
+        return $this->hasMany(HotelRoom::class);
     }
 }

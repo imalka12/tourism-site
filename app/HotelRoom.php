@@ -14,5 +14,15 @@ class HotelRoom extends Model
      *
      * @var array
      */
-    protected $fillable = ['image', 'type', 'hotel_id'];
+    protected $fillable = ['image', 'type', 'hotel_id', 'meal_plan'];
+
+    /**
+     * Room belongs to Hotel.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function hotel()
+    {
+        return $this->belongsTo(Hotel::class);
+    }
 }
