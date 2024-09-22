@@ -56,11 +56,11 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 {!! NoCaptcha::renderJs() !!}
                 {!! NoCaptcha::display() !!}
                 <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
-            </div>
+            </div> -->
             <div class="form-group text-center">
                 <button class="btn btn-outline-success btn-lg" type="submit"><i class="fas fa-paper-plane"></i> Send
                     Message</button>

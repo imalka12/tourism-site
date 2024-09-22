@@ -40,15 +40,6 @@ class ActivityController extends Controller
             }
         }
 
-        // $locations = [
-        //     [
-        //         "lat" => 8.3114,
-        //         "lng" => 80.4037,
-        //         "title" => "Anuradhapura",
-        //         "description" => "Historical city in Sri Lanka"
-        //     ]
-        // ];
-
         $pageSubHeading = 'Activity';
         $pageHeading = $activity->title;
 

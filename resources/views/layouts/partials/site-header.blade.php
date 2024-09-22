@@ -170,7 +170,7 @@
                 </div>
             </div>
             <div class="col-xl-6 text-center">
-                <a href="{{ route('site.home') }}"><img class="img-fluid logo-new" style="width: 200px; margin-top: 10px; margin-bottom:10px;" src="{{ asset('assets/img/ET-logo-new.png') }}"></a>
+                <a href="{{ route('site.home') }}"><img class="img-fluid logo-new" style="width: 200px; margin-top: 2px; margin-bottom:2px;" src="{{ asset('assets/img/ET-logo-new.png') }}"></a>
             </div>
             <div class="col-xl-4">
                 <div class="row header-top-left" style="width: 410px;">

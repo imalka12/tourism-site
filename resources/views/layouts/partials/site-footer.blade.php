@@ -37,11 +37,6 @@
                 </li>
                 <li style="list-style: none;padding-bottom: 15px;">
                     <a class="footer-text" href="#">
-                        <span>Honeymoon</span>
-                    </a>
-                </li>
-                <li style="list-style: none;padding-bottom: 15px;">
-                    <a class="footer-text" href="#">
                         <span>Family</span>
                     </a>
                 </li>
@@ -69,21 +64,6 @@
                 <li style="list-style: none;padding-bottom: 15px;">
                     <a class="footer-text" href="#">
                         <span>Wellness</span>
-                    </a>
-                </li>
-                <li style="list-style: none;padding-bottom: 15px;">
-                    <a class="footer-text" href="#">
-                        <span>Off the beaten path</span>
-                    </a>
-                </li>
-                <li style="list-style: none;padding-bottom: 15px;">
-                    <a class="footer-text" href="#">
-                        <span>Lifestyle & culinary</span>
-                    </a>
-                </li>
-                <li style="list-style: none;padding-bottom: 15px;">
-                    <a class="footer-text" href="#">
-                        <span>Volunteering </span>
                     </a>
                 </li>
             </ul>
@@ -122,15 +102,6 @@
                 <li style="list-style: none;padding-bottom: 15px;"><a class="footer-text"
                         href="{{ route('site.hotels') }}"><span>Hotel
                             reservation<br></span></a></li>
-
-                <li style="list-style: none;padding-bottom: 15px;"><a class="footer-text" href="#"><span>Family
-                            offers<br></span></a></li>
-
-                <li style="list-style: none;padding-bottom: 15px;"><a class="footer-text"
-                        href="#"><span>MICE<br></span></a></li>
-
-                <li style="list-style: none;padding-bottom: 15px;"><a class="footer-text" href="#"><span>Event
-                            management<br></span></a></li>
             </ul>
         </div>
     </div>

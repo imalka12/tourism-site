@@ -190,10 +190,6 @@
                                         style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">Family offers</a>
                                         <a class="dropdown-item text-uppercase" role="presentation" href="#"
                                         style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">Maldives Packages</a>
-                                        <a class="dropdown-item text-uppercase" role="presentation" href="#"
-                                        style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">MICE</a>
-                                        <a class="dropdown-item text-uppercase" role="presentation" href="#"
-                                        style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">Event management</a>
                                     </div>
                                 </li>
                                 <li class="nav-item" role="presentation">
@@ -281,12 +277,6 @@
                                         style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">Hotel reservation</a>
                                         <a class="dropdown-item text-uppercase" role="presentation" href="#"
                                         style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">Family offers</a>
-                                        <a class="dropdown-item text-uppercase" role="presentation" href="#"
-                                        style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">Maldives Packages</a>
-                                        <a class="dropdown-item text-uppercase" role="presentation" href="#"
-                                        style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">MICE</a>
-                                        <a class="dropdown-item text-uppercase" role="presentation" href="#"
-                                        style="font-size: 14px;font-family: 'Titillium Web', sans-serif;">Event management</a>
                                     </div>
                                 </li>
                             </ul>

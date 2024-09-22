@@ -1015,11 +1015,11 @@
                                   placeholder="Special requirements">{{ old('special_requirements') }}</textarea>
                     </div>
                     <div class="col-lg-12">
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             {!! NoCaptcha::renderJs() !!}
                             {!! NoCaptcha::display() !!}
                             <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
-                        </div>
+                        </div> -->
                         <button type="submit" class="btn btn-success">Send</button>
                     </div>
                 </div>
