@@ -3,8 +3,7 @@
 namespace App\Repositories;
 
 use App\Repositories\Contracts\OfferRepositoryInterface;
-use App\Offer;
-use App\Itinerary;
+use App\Models\Offer;
 
 class OfferRepository implements OfferRepositoryInterface
 {
@@ -14,15 +13,16 @@ class OfferRepository implements OfferRepositoryInterface
      * @return Collection<App\Itinerary> $itineraries
      * A list of itineraries
      */
-    public function getOffers() {
+    public function getOffers()
+    {
         $currentDate = date('Y-m-d');
 
-        return Offer::where(function($query) use($currentDate) {
+        return Offer::where(function ($query) use ($currentDate) {
             $query->where('start_date', '<=', $currentDate)
-            ->where('end_date', '>=', $currentDate);
+                ->where('end_date', '>=', $currentDate);
         })
-        ->orWhere('is_indefinite', '1')
-        ->with('itinerary')
-        ->get();
+            ->orWhere('is_indefinite', '1')
+            ->with('itinerary')
+            ->get();
     }
 }

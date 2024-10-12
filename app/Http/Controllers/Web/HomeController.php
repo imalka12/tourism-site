@@ -9,15 +9,11 @@ use App\Repositories\AttractionRepository;
 use App\Repositories\BlogRepository;
 use App\Repositories\HomeRepository;
 use App\Repositories\ItineraryRepository;
-use App\TourType;
-use Illuminate\Http\Client\Response;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use function collect;
 
 class HomeController extends Controller
 {
-
     private $homeRepository;
     private $itineraryRepository;
     private $attractionRepository;
@@ -106,7 +102,7 @@ class HomeController extends Controller
         $monthName = strtolower($month);
 
         // redirect to home if type and month is not set or empty
-        if(empty($type)) {
+        if (empty($type)) {
             return redirect()->route('site.tour-types');
         }
 

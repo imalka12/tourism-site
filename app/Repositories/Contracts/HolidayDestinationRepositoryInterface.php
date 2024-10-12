@@ -1,14 +1,15 @@
-<?php 
+<?php
 
 namespace App\Repositories\Contracts;
 
-interface HolidayDestinationRepositoryInterface {
-    
+interface HolidayDestinationRepositoryInterface
+{
+
     /**
      * Get the holiday destination entry identified by the slug text
      * 
      * @param string $slug
-     * @return \App\HolidayDestiation $destination
+     * @return HolidayDestiation $destination
      */
     public function getHolidayDestinationDetailsBySlug(string $slug);
 
@@ -18,7 +19,7 @@ interface HolidayDestinationRepositoryInterface {
      * @param string|int $destinationID
      * HolidayDestination object id
      * 
-     * @return Collection<\App\Activity> $activities
+     * @return Collection<Activity> $activities
      * Activities of the cities in the holiday destination
      */
     public function getHolidayDestinationCityActivitiesList($destinationId);
@@ -29,7 +30,7 @@ interface HolidayDestinationRepositoryInterface {
      * @param string|int $destination$id
      * HolidayDestination object id
      * 
-     * @return Collection<\App\Hotel> $hotels
+     * @return Collection<Hotel> $hotels
      * List of hotels in the cities list of the holiday destination
      */
     public function getHotelsByHolidayDestinationId($destinationId);
@@ -37,7 +38,7 @@ interface HolidayDestinationRepositoryInterface {
     /**
      * Get the list of Holiday Destinations registered in the system
      * 
-     * @return Collection<\App\HolidayDestination> $destinations
+     * @return Collection<HolidayDestination> $destinations
      */
     public function getHolidayDestinationsList();
 
@@ -45,8 +46,7 @@ interface HolidayDestinationRepositoryInterface {
      * Get the holiday destination entry identified by the ID
      * 
      * @param string|int $id
-     * @return \App\HolidayDestiation $destination
+     * @return HolidayDestiation $destination
      */
     public function getHolidayDestinationDetailsById($id);
-
 }

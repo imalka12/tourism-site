@@ -3,11 +3,10 @@
 namespace App\Repositories\Contracts;
 
 use App\Enums\TransportOptionType;
-use App\Hotel;
-use App\Review;
-use App\TransportOption;
+use App\Models\Hotel;
+use App\Models\Review;
+use App\Models\TransportOption;
 use Illuminate\Support\Collection;
-use phpDocumentor\Reflection\Types\Array_;
 
 interface HomeRepositoryInterface
 {
@@ -55,5 +54,4 @@ interface HomeRepositoryInterface
      * @return array $array
      */
     public function getHotelsByCities();
-
 }

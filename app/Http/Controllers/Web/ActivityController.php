@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Web;
 
-use App\Activity;
+use App\Models\Activity;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repositories\ActivityRepository;
@@ -87,7 +87,8 @@ class ActivityController extends Controller
         return view('pages.activity', compact('pageHeading', 'pageSubHeading', 'cityActivity', 'activity', 'cities', 'locations', 'breadcrumbs'));
     }
 
-    function getAllActivities() {
+    function getAllActivities()
+    {
         $activities = Activity::all();
 
         return response()->json($activities);

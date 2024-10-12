@@ -7,7 +7,7 @@ interface OfferRepositoryInterface
     /**
      * Get offers
      * 
-     * @return Collection<App\Itinerary> $itineraries
+     * @return Collection<Itinerary> $itineraries
      * A list of itineraries
      */
     public function getOffers();

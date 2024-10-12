@@ -7,19 +7,21 @@ use App\Http\Controllers\Controller;
 use App\Repositories\AboutRepository;
 use App\Repositories\HomeRepository;
 use App\Repositories\TestimonialsRepository;
-use Illuminate\Http\Request;
+use App\Services\OpenAIService;
 
 class AboutController extends Controller
 {
     private $testimonialsRepository;
     private $aboutRepository;
     private $homeRepository;
+    private $openAIService;
 
-    public function __construct(TestimonialsRepository $testimonialsRepository, AboutRepository $aboutRepository, HomeRepository $homeRepository)
+    public function __construct(TestimonialsRepository $testimonialsRepository, AboutRepository $aboutRepository, HomeRepository $homeRepository, OpenAIService $openAIService)
     {
         $this->testimonialsRepository = $testimonialsRepository;
         $this->aboutRepository = $aboutRepository;
         $this->homeRepository = $homeRepository;
+        $this->openAIService = $openAIService;
     }
 
     public function showOurTeamPage()
@@ -34,7 +36,6 @@ class AboutController extends Controller
         $teamMembers = $this->aboutRepository->getTeamMembersList();
 
         return view('pages.our-team', compact('pageHeading', 'pageSubHeading', 'breadcrumbs', 'teamMembers'));
-
     }
 
     public function showTestimonialsPage()
@@ -98,7 +99,7 @@ class AboutController extends Controller
     public function showTransportOptionsPage()
     {
         $transportOptions = $this->homeRepository->getTransportationOptions();
-//        dd($transportOptions);
+        //        dd($transportOptions);
 
         $typeNames = [
             TransportOptionType::BUS => 'bus',
@@ -123,7 +124,7 @@ class AboutController extends Controller
     {
         $cityHotels = $this->homeRepository->getHotelsByCities();
 
-//        dd($cityHotels);
+        //        dd($cityHotels);
 
         $pageSubHeading = 'Sri Lanka';
         $pageHeading = 'Hotels';
@@ -132,5 +133,18 @@ class AboutController extends Controller
             ['title' => 'Hotels', 'link' => ''],
         ];
         return view('pages.hotels', compact('pageHeading', 'pageSubHeading', 'breadcrumbs', 'cityHotels'));
+    }
+
+    public function testoai()
+    {
+        $question = 'What is the capital of Sri Lanka?';
+        $response = $this->openAIService->ask($question);
+        dd($response);
+    }
+
+    public function models()
+    {
+        $res = $this->openAIService->listModels();
+        dd($res);
     }
 }

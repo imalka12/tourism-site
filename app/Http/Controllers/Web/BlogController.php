@@ -10,7 +10,8 @@ class BlogController extends Controller
 {
     private $blogRepository;
 
-    public function __construct(BlogRepository $blogRepository) {
+    public function __construct(BlogRepository $blogRepository)
+    {
         $this->blogRepository = $blogRepository;
     }
 
@@ -60,10 +61,7 @@ class BlogController extends Controller
         return view('pages.blog-category', compact('pageHeading', 'pageSubHeading', 'breadcrumbs', 'blogPosts', 'categories', 'category'));
     }
 
-    public function showPostsByMonthPage()
-    {
-        
-    }
+    public function showPostsByMonthPage() {}
 
     public function displayPostsSearchResultsPage(Request $request)
     {
@@ -84,8 +82,5 @@ class BlogController extends Controller
         $blogPosts = $this->blogRepository->searchPosts($words);
 
         return view('pages.blog-search-results', compact('pageHeading', 'pageSubHeading', 'breadcrumbs', 'blogPosts', 'categories', 'search_text'));
-
-
     }
-
 }

@@ -160,7 +160,7 @@
                         <div class="collapse navbar-collapse header-menu-space" id="navcol-1">
                             <ul class="nav navbar-nav right-header-space">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link text-uppercase" href="{{route('site.tailor-made')}}" style="color: #000000;font-size: 14px;font-family: 'Titillium Web', sans-serif;padding-top: 14px;">Tailor-made</a>
+                                    <a class="nav-link text-uppercase" href="{{route('site.tailor-made')}}" style="color: #000000;font-size: 14px;font-family: 'Titillium Web', sans-serif;padding-top: 14px;">Customize Tour</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link text-uppercase" href="{{route('site.offers')}}" style="color: #000000;font-size: 14px;font-family: 'Titillium Web', sans-serif;padding-top: 14px;">offers</a>
@@ -245,7 +245,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link text-uppercase" href="{{route('site.tailor-made')}}" style="color: #000000;font-size: 14px;font-family: 'Titillium Web', sans-serif;">Tailor-made</a>
+                                    <a class="nav-link text-uppercase" href="{{route('site.tailor-made')}}" style="color: #000000;font-size: 14px;font-family: 'Titillium Web', sans-serif;">Customize Tour</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link text-uppercase" href="{{route('site.offers')}}" style="color: #000000;font-size: 14px;font-family: 'Titillium Web', sans-serif;">Offers</a>

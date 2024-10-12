@@ -10,7 +10,8 @@ class AttractionsController extends Controller
 {
     private $attractionRepository;
 
-    public function __construct(AttractionRepository $attractionRepository) {
+    public function __construct(AttractionRepository $attractionRepository)
+    {
         $this->attractionRepository = $attractionRepository;
     }
 
@@ -33,5 +34,4 @@ class AttractionsController extends Controller
 
         return view('pages.attraction', compact('pageHeading', 'pageSubHeading', 'attraction'));
     }
-
 }

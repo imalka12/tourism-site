@@ -2,10 +2,10 @@
 
 namespace App\Repositories\Contracts;
 
-use App\Enums\TourCategory;
-use App\Itinerary;
+use App\Models\Itinerary;
 
-interface ItineraryRepositoryInterface {
+interface ItineraryRepositoryInterface
+{
 
     /**
      * Get itinerary by slug
@@ -13,7 +13,7 @@ interface ItineraryRepositoryInterface {
      * @param string $slug
      * URL slug for the itinerary
      *
-     * @return \App\Itinerary $itinerary
+     * @return Itinerary $itinerary
      * Itinerary identified by the slug
      */
     public function getItineraryBySlug($slug);
@@ -21,7 +21,7 @@ interface ItineraryRepositoryInterface {
     /**
      * Get itineraries list
      *
-     * @return Collection<\App\Itinerary> $itineraries
+     * @return Collection<Itinerary> $itineraries
      */
     public function getItinerariesList();
 
@@ -42,7 +42,7 @@ interface ItineraryRepositoryInterface {
      * @param string|int $id
      * Itinerary id
      *
-     * @return Collection<\App\Activity> $activities
+     * @return Collection<Activity> $activities
      * List of activities
      */
     public function getActivitiesByItineraryId($id);
@@ -71,7 +71,7 @@ interface ItineraryRepositoryInterface {
     /**
      * Get tours types list
      *
-     * @return Collection<\App\TourType> $types
+     * @return Collection<TourType> $types
      */
     public function getTourTypesList();
 
@@ -126,5 +126,4 @@ interface ItineraryRepositoryInterface {
      * @return mixed
      */
     public function getActivitiesForItinerary(Itinerary $itinerary);
-
 }

@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace App\Repositories\Contracts;
 
-interface CityRepositoryInterface {
+interface CityRepositoryInterface
+{
 
     /**
      * Get city by slug
@@ -24,9 +25,8 @@ interface CityRepositoryInterface {
      * @param string $id
      * City id
      * 
-     * @return Collection(App\CityActivity) $activities
+     * @return Collection(CityActivity) $activities
      * Collection of city activities
      */
     public function getActivitesByCityId($cityId);
-
 }

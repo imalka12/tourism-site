@@ -3,8 +3,8 @@
 namespace App\Repositories;
 
 use App\Repositories\Contracts\AttractionRepositoryInterface;
-use App\AttractionType;
-use App\Attraction;
+use App\Models\AttractionType;
+use App\Models\Attraction;
 
 class AttractionRepository implements AttractionRepositoryInterface
 {
@@ -20,14 +20,16 @@ class AttractionRepository implements AttractionRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function getAttractionTypeById($id) {
+    public function getAttractionTypeById($id)
+    {
         return AttractionType::where('id', $id)->first();
     }
 
     /**
      * @inheritDoc
      */
-    public function getAttractionTypeBySlug($slug) {
+    public function getAttractionTypeBySlug($slug)
+    {
         return AttractionType::where('slug', $slug)->first();
     }
 
@@ -54,5 +56,4 @@ class AttractionRepository implements AttractionRepositoryInterface
     {
         return Attraction::where('slug', $slug)->first();
     }
-
 }

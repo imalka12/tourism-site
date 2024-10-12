@@ -2,8 +2,8 @@
 
 namespace App\Repositories;
 
-use App\Category;
-use App\Post;
+use App\Models\Category;
+use App\Models\Post;
 use App\Repositories\Contracts\BlogRepositoryInterface;
 
 class BlogRepository implements BlogRepositoryInterface
@@ -34,9 +34,9 @@ class BlogRepository implements BlogRepositoryInterface
         return Post::where('id', $id)->first();
     }
 
-/**
- * @inheritDoc
- */
+    /**
+     * @inheritDoc
+     */
     public function getCategories()
     {
         return Category::all();
@@ -105,8 +105,8 @@ class BlogRepository implements BlogRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function getAllBlogPosts() {
+    public function getAllBlogPosts()
+    {
         return Post::all();
     }
-
 }

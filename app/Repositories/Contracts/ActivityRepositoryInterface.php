@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace App\Repositories\Contracts;
 
-interface ActivityRepositoryInterface {
+interface ActivityRepositoryInterface
+{
 
     /**
      * Get activity by id
@@ -12,7 +13,7 @@ interface ActivityRepositoryInterface {
      * @param string|int $id
      * Activity ID
      * 
-     * @return \App\Activity $activity
+     * @return Activity $activity
      */
     public function getActivityById($id);
 
@@ -24,7 +25,7 @@ interface ActivityRepositoryInterface {
      * @param string $slug
      * Slug of the activity objet
      * 
-     * @return \App\Activity $activity
+     * @return Activity $activity
      */
     public function getActivityBySlug(string $slug);
 
@@ -36,7 +37,7 @@ interface ActivityRepositoryInterface {
      * @param string|int $id
      * Activity id
      * 
-     * @return Collection<\App\Activity> $activities
+     * @return Collection<Activity> $activities
      */
     public function getActivitiesListByCity($id);
 
@@ -48,7 +49,7 @@ interface ActivityRepositoryInterface {
      * @param string $slug
      * Slug of the city activity objet
      * 
-     * @return \App\Activity $activity
+     * @return Activity $activity
      */
     public function getActivityByCityActivitySlug(string $slug);
 
@@ -60,7 +61,7 @@ interface ActivityRepositoryInterface {
      * @param string $slug
      * Slug of the city activity objet
      * 
-     * @return \App\City $city
+     * @return City $city
      */
     public function getCityByCityActivitySlug(string $slug);
 
@@ -72,7 +73,7 @@ interface ActivityRepositoryInterface {
      * @param string $slug
      * URL slug for the city activity entry
      * 
-     * @return \App\CityActivity $cityActivty
+     * @return CityActivity $cityActivty
      */
     public function getCityActivitySlug(string $slug);
 
@@ -84,7 +85,7 @@ interface ActivityRepositoryInterface {
      * @param string|int $activityId
      * Activty ID
      * 
-     * @return Collection<\App\City> $cities
+     * @return Collection<City> $cities
      * List of cities
      */
     public function getActivityCities($activityId);
@@ -92,7 +93,7 @@ interface ActivityRepositoryInterface {
     /**
      * Get a list of activities
      * 
-     * @return Collection<\App\Activity> $activities
+     * @return Collection<Activity> $activities
      * A collection of activities
      */
     public function getActivitiesList();
@@ -100,8 +101,7 @@ interface ActivityRepositoryInterface {
     /**
      * Get a list of city activities
      * 
-     * @return Collection<App\CityActivity>
+     * @return Collection<CityActivity>
      */
     public function getCityActivitiesList();
-
 }

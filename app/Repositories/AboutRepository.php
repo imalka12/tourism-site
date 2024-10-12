@@ -3,16 +3,17 @@
 namespace App\Repositories;
 
 use App\Repositories\Contracts\AboutRepositoryInterface;
-use App\Team;
+use App\Models\Team;
 
-class AboutRepository implements AboutRepositoryInterface {
-    
+class AboutRepository implements AboutRepositoryInterface
+{
+
     /**
      * @inheritDoc
      */
-    public function getTeamMembersList() {
+    public function getTeamMembersList()
+    {
         $members = Team::all();
         return $members;
     }
-
 }

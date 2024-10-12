@@ -8,21 +8,21 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Artesaos\SEOTools\Facades\JsonLd;
-
 use App\Repositories\CityRepository;
 
 class CityController extends Controller
 {
     private $cityRepository;
 
-    public function __construct(CityRepository $cityRepository) {
+    public function __construct(CityRepository $cityRepository)
+    {
         $this->cityRepository = $cityRepository;
     }
 
     public function showCityPage(Request $request, $city)
     {
-        $city = $this->cityRepository->getCityBySlug($city) ;
-        
+        $city = $this->cityRepository->getCityBySlug($city);
+
         if (empty($city)) {
             return abort(404, 'City not found');
         }
@@ -37,10 +37,10 @@ class CityController extends Controller
         SEOMeta::setTitle($city->title);
         SEOMeta::setDescription($city->meta_description);
         SEOMeta::setCanonical(url()->route('site.city', $city->slug));
-        
+
         if (strlen(trim($city->meta_keywords)) > 0) {
             $__seo_keywords = explode(",", $city->meta_keywords);
-            if(!empty($__seo_keywords)) {
+            if (!empty($__seo_keywords)) {
                 SEOMeta::addKeyword(array_map('trim', $__seo_keywords));
             }
         }
@@ -58,13 +58,11 @@ class CityController extends Controller
         JsonLd::addImage(imageUrl($city->image));
 
         $breadcrumbs = [
-            [ 'title' => 'Home', 'link' => route('site.home') ],
-            [ 'title' => 'City', 'link' => '' ],
-            [ 'title' => $city->title, 'link' => url()->route('site.city', $city->slug) ],
+            ['title' => 'Home', 'link' => route('site.home')],
+            ['title' => 'City', 'link' => ''],
+            ['title' => $city->title, 'link' => url()->route('site.city', $city->slug)],
         ];
 
         return view('pages.city', compact('pageHeading', 'pageSubHeading', 'city', 'activities', 'breadcrumbs'));
     }
-
 }
- 

@@ -2,17 +2,11 @@
 
 namespace App\Repositories;
 
-use App\CityActivity;
 use App\Enums\ActiveStatus;
-use App\Enums\TourCategory;
-use App\Repositories\Contracts\Collection;
 use App\Repositories\Contracts\ItineraryRepositoryInterface;
-use DB;
-use App\Itinerary;
-use App\ItineraryDay;
-use App\Activity;
-use App\Enums\InclusionType;
-use App\TourType;
+use App\Models\Itinerary;
+use App\Models\ItineraryDay;
+use App\Models\TourType;
 
 class ItineraryRepository implements ItineraryRepositoryInterface
 {
@@ -127,13 +121,13 @@ class ItineraryRepository implements ItineraryRepositoryInterface
             ->get();
     }
 
-
+    /**
+     * @inheritDoc
+     */
     public function getToursByTypeId($type)
     {
         return Itinerary::where('tour_type_id', $type)->get();
     }
-
-
 
     /**
      * @inheritdoc

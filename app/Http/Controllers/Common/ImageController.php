@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Common;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use League\Glide\Responses\LaravelResponseFactory;
 use League\Glide\ServerFactory;

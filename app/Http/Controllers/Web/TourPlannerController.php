@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Web;
 
-use App\CustomTour;
+use App\Models\CustomTour;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -44,11 +44,13 @@ class TourPlannerController extends Controller
             'country' => 'required|string|max:255',
             'special_requirements' => 'nullable|string',
             'total_accomodation_budget' => 'nullable|numeric',
-          'g-recaptcha-response' => 'required|captcha',
-        ], [
-            'g-recaptcha-response.required' => 'You have to choose the file!',
-            'g-recaptcha-response.required' => 'You have to choose type of the file!'
-        ]);
+            // 'g-recaptcha-response' => 'required|captcha',
+        ]
+        // , [
+        //     'g-recaptcha-response.required' => 'You have to choose the file!',
+        //     'g-recaptcha-response.required' => 'You have to choose type of the file!'
+        // ]
+    );
 
         $validatedData['room_types'] = $validatedData['room_types'] ?? [];
         $validatedData['holiday_types'] = $validatedData['holiday_types'] ?? [];
@@ -56,7 +58,7 @@ class TourPlannerController extends Controller
 
         // make arrays to strings for room_types, holiday_types, accomodation_types
         $validatedData['room_types'] = implode(',', $validatedData['room_types'] ?? []);
-//        $validatedData['holiday_types'] = implode(',', $validatedData['holiday_types'] ?? []);
+        //        $validatedData['holiday_types'] = implode(',', $validatedData['holiday_types'] ?? []);
         $validatedData['accomodation_types'] = implode(',', $validatedData['accomodation_types'] ?? []);
 
 
@@ -74,7 +76,7 @@ class TourPlannerController extends Controller
         } else {
             $validatedData['specialInterestedActivities'] = implode(', ', $validatedData['specialInterestedActivities']);
         }
-//        dd($validatedData['holiday_types']);
+        //        dd($validatedData['holiday_types']);
 
         // Create a new CustomTour record
         $customTour = CustomTour::create($validatedData);
@@ -102,27 +104,27 @@ class TourPlannerController extends Controller
         ];
 
         Mail::send('mailables.tailor-made-acknowledgement', $tourData, function ($message) use ($tourData) {
-            $responseFromName = config('ttll.emails.response.from.name');
-            $responseFromEmail = config('ttll.emails.response.from.email');
+            $responseFromName = config('site.emails.response.from.name');
+            $responseFromEmail = config('site.emails.response.from.email');
 
             $message->from($responseFromEmail, $responseFromName);
             $message->to($tourData['email'], $tourData['custname']);
             $message->replyTo($responseFromEmail, $responseFromName);
-            $message->subject('Tailor-made Tour Request Received - Explore Thaprobana');
+            $message->subject('Customize Tour Request Received - Explore Thaprobana');
         });
 
         // send inquiry details internal email
         Mail::send('mailables.tailor-made-request', $tourData, function ($message) use ($tourData) {
-            $tailorMadeToName = config('ttll.emails.tailor_made.to.name');
-            $tailorMadeToEmail = config('ttll.emails.tailor_made.to.email');
+            $tailorMadeToName = config('site.emails.tailor_made.to.name');
+            $tailorMadeToEmail = config('site.emails.tailor_made.to.email');
 
-            $responseFromName = config('ttll.emails.response.from.name');
-            $responseFromEmail = config('ttll.emails.response.from.email');
+            $responseFromName = config('site.emails.response.from.name');
+            $responseFromEmail = config('site.emails.response.from.email');
 
             $message->from($responseFromEmail, $responseFromName);
             $message->to($tailorMadeToEmail, $tailorMadeToName);
             $message->replyTo($tourData['email'], $tourData['custname']);
-            $message->subject('Explore Thaprobana Website - Tailor-made Tour Request from ' . $tourData['custname']);
+            $message->subject('Explore Thaprobana Website - Customize Tour Request from ' . $tourData['custname']);
         });
 
         return redirect()->route('site.tailor-made')

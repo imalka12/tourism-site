@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Common;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Validator;
-use Mail;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 
 class InquiryController extends Controller
 {
@@ -55,9 +55,9 @@ class InquiryController extends Controller
             'sender_message' => $sender_message,
         ];
 
-        Mail::send('mailables.inquiry-acknowledgment', $inquiryData, function ($message) use($inquiryData) {
-            $responseFromName = config('ttll.emails.response.from.name');
-            $responseFromEmail = config('ttll.emails.response.from.email');
+        Mail::send('mailables.inquiry-acknowledgment', $inquiryData, function ($message) use ($inquiryData) {
+            $responseFromName = config('site.emails.response.from.name');
+            $responseFromEmail = config('site.emails.response.from.email');
 
             $message->from($responseFromEmail, $responseFromName);
             $message->to($inquiryData['sender_email'], $inquiryData['sender_name']);
@@ -66,13 +66,13 @@ class InquiryController extends Controller
         });
 
         // send inquiry details internal email
-        Mail::send('mailables.inquiry-request-details', $inquiryData, function ($message) use($inquiryData) {
-            $responseFromName = config('ttll.emails.response.from.name');
-            $responseFromEmail = config('ttll.emails.response.from.email');
-            $inquiryToName = config('ttll.emails.inquiry.to.name');
-            $inquiryToEmail = config('ttll.emails.inquiry.to.email');
+        Mail::send('mailables.inquiry-request-details', $inquiryData, function ($message) use ($inquiryData) {
+            $responseFromName = config('site.emails.response.from.name');
+            $responseFromEmail = config('site.emails.response.from.email');
+            $inquiryToName = config('site.emails.inquiry.to.name');
+            $inquiryToEmail = config('site.emails.inquiry.to.email');
 
-//            $message->from($inquiryData['sender_email'], $inquiryData['sender_name']);
+            //            $message->from($inquiryData['sender_email'], $inquiryData['sender_name']);
             $message->from($responseFromEmail, $responseFromName);
             $message->to($inquiryToEmail, $inquiryToName);
             $message->replyTo($inquiryData['sender_email'], $inquiryData['sender_name']);
@@ -81,5 +81,4 @@ class InquiryController extends Controller
 
         return redirect($return_url)->with('response_success', 'Your inquiry message submitted successfully. Please check your email for confirmation.');
     }
-
 }

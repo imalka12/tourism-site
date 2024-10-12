@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @see https://github.com/artesaos/seotools
  */
@@ -50,7 +51,7 @@ return [
          */
         'defaults' => [
             'card'        => 'summary',
-            'site'        => '@TravelLanka',
+            'site'        => '@ExploreThaprobana',
         ],
     ],
     'json-ld' => [

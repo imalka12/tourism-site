@@ -3,23 +3,26 @@
 namespace App\Repositories;
 
 use App\Repositories\Contracts\ActivityRepositoryInterface;
-use App\Activity;
-use App\City;
-use App\CityActivity;
+use App\Models\Activity;
+use App\Models\City;
+use App\Models\CityActivity;
 
-class ActivityRepository implements ActivityRepositoryInterface {
+class ActivityRepository implements ActivityRepositoryInterface
+{
 
     /**
      * @inheritDoc
      */
-    public function getActivityById($id) {
+    public function getActivityById($id)
+    {
         Activity::find($id);
     }
 
     /**
      * @inheritDoc
      */
-    public function getActivityBySlug(string $slug) {
+    public function getActivityBySlug(string $slug)
+    {
         $activity = Activity::where('slug', $slug)->first();
         if (empty($activity)) {
             return null;
@@ -31,7 +34,8 @@ class ActivityRepository implements ActivityRepositoryInterface {
     /**
      * @inheritDoc
      */
-    public function getActivitiesListByCity($id) {
+    public function getActivitiesListByCity($id)
+    {
         $city = City::where('id', $id)->first();
         if (empty($city)) {
             return abort(404, 'City not found.');
@@ -43,7 +47,8 @@ class ActivityRepository implements ActivityRepositoryInterface {
     /**
      * @inheritDoc
      */
-    public function getActivityByCityActivitySlug(string $slug) {
+    public function getActivityByCityActivitySlug(string $slug)
+    {
         $cityActivity = CityActivity::where('slug', $slug)->first();
         if (empty($cityActivity)) {
             return null;
@@ -55,7 +60,8 @@ class ActivityRepository implements ActivityRepositoryInterface {
     /**
      * @inheritDoc
      */
-    public function getCityByCityActivitySlug(string $slug) {
+    public function getCityByCityActivitySlug(string $slug)
+    {
         $cityActivity = CityActivity::where('slug', $slug)->first();
         if (empty($cityActivity)) {
             return null;
@@ -67,7 +73,8 @@ class ActivityRepository implements ActivityRepositoryInterface {
     /**
      * @inheritDoc
      */
-    public function getCityActivitySlug(string $slug) {
+    public function getCityActivitySlug(string $slug)
+    {
         $cityActivity = CityActivity::where('slug', $slug)->first();
         if (empty($cityActivity)) {
             return null;
@@ -75,11 +82,12 @@ class ActivityRepository implements ActivityRepositoryInterface {
 
         return $cityActivity;
     }
- 
+
     /**
      * @inheritDoc
      */
-    public function getActivityCities($activityId) {
+    public function getActivityCities($activityId)
+    {
         $cityActivities = CityActivity::where('activity_id', $activityId)->with('city')->get();
         if (count($cityActivities) == 0) {
             return null;
@@ -91,7 +99,8 @@ class ActivityRepository implements ActivityRepositoryInterface {
     /**
      * @inheritDoc
      */
-    public function getActivitiesList() {
+    public function getActivitiesList()
+    {
         $activities = Activity::all();
         return $activities;
     }
@@ -99,9 +108,9 @@ class ActivityRepository implements ActivityRepositoryInterface {
     /**
      * @inheritDoc
      */
-    public function getCityActivitiesList() {
+    public function getCityActivitiesList()
+    {
         $cityActivities = CityActivity::with(['activity', 'city'])->get();
         return $cityActivities;
     }
-
 }

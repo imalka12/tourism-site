@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Repositories\ItineraryRepository;
-use App\TourType;
+use App\Models\TourType;
 
 class TourTypeController extends Controller
 {
@@ -20,7 +20,8 @@ class TourTypeController extends Controller
         $pageSubHeading = 'Our Tour Types';
         $pageHeading = 'Tour Types';
         $breadcrumbs = [
-            ['title' => 'Home', 'link' => route('site.home')],            ['title' => 'Tour Types', 'link' => ''],
+            ['title' => 'Home', 'link' => route('site.home')],
+            ['title' => 'Tour Types', 'link' => ''],
         ];
 
 
@@ -29,12 +30,10 @@ class TourTypeController extends Controller
         return view('pages.tour-types', compact('pageHeading', 'pageSubHeading', 'breadcrumbs', 'tourTypes'));
     }
 
-    public function show($slug)
+    public function show($slug) {}
+
+    function getAllTourTypes()
     {
-
-    }
-
-    function getAllTourTypes() {
         $tourTypes = TourType::all();
 
         return response()->json($tourTypes);

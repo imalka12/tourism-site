@@ -3,26 +3,28 @@
 namespace App\Repositories;
 
 use App\Enums\TransportOptionType;
-use App\Hotel;
-use App\Repositories\Contracts\Collection;
+use App\Models\Hotel;
 use App\Repositories\Contracts\HomeRepositoryInterface;
-use App\Review;
+use App\Models\Review;
 use App\Enums\ReviewType;
-use App\TransportOption;
+use App\Models\TransportOption;
 
-class HomeRepository implements HomeRepositoryInterface {
+class HomeRepository implements HomeRepositoryInterface
+{
 
     /**
      * @inheritDoc
      */
-    public function getTripAdvisorReviews() {
+    public function getTripAdvisorReviews()
+    {
         return Review::where('type', ReviewType::TRIP_ADVISOR)->get();
     }
 
     /**
      * @inheritDoc
      */
-    public function getLametayelReviews() {
+    public function getLametayelReviews()
+    {
         return Review::where('type', ReviewType::LAMETAYEL)->get();
     }
 
@@ -73,6 +75,4 @@ class HomeRepository implements HomeRepositoryInterface {
 
         return $cityHotels;
     }
-
-
 }

@@ -2,13 +2,13 @@
 
 namespace App\Repositories\Contracts;
 
-interface AboutRepositoryInterface {
+interface AboutRepositoryInterface
+{
 
     /**
      * Get team memberes list
      * 
-     * @return Collection<App\Team> $teamMembers
+     * @return Collection<Team> $teamMembers
      */
     public function getTeamMembersList();
-
 }

@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-xl-12 tour-package-left-area">
             <div class="row" style="padding-bottom: 50px;">
-                <div class="col inner-other-package-area" style="/*padding-bottom: 15px;*/"><span
+                <div class="col inner-other-package-area"><span
                         class="inner-other-packages-subheading">Explore Thaprobana (Pvt) Ltd<br></span><span
                         class="inner-other-packages-heading">Company Overview</span></div>
             </div>
@@ -61,40 +61,40 @@
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/why_us_2.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/why_us_2.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 We are flexible on rules on&nbsp;payment and cancellation policies.
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/why_us_3.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/why_us_3.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 We remain highly responsive to&nbsp;our customer’s needs at all times.
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/why_us_4.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/why_us_4.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 Our solutions are very&nbsp;competitive in the market.
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/why_us_5.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/why_us_5.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 We always offer you seamless&nbsp;grid for all of your travel needs.
             </p>
         </div>
     </div>
     <div class="row justify-content-center" style="padding-top: 50px;">
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/why_us_6.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/why_us_6.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 24-7 hours unmatched customer service with back up mobile number contacts.
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/why_us_7.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/why_us_7.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 We take the extra step with&nbsp;our clients &amp; provide them a&nbsp;complete travel solution.
             </p>
         </div>
@@ -108,32 +108,32 @@
     </div>
     <div class="row justify-content-center" style="padding-top: 50px;">
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/awca_1.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/awca_1.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 Benefits for local communities
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/awca_2.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/awca_2.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 Respect for local cultures
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/awca_3.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/awca_3.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 Protection of the environment&nbsp;of our all activities
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/awca_4.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/awca_4.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 Conservation of natural resources
             </p>
         </div>
         <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
-            <i class="aboutUs_whyUs_icons" ><img src="assets/img/awca_5.png"></i>
-             <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
+            <i class="aboutUs_whyUs_icons"><img src="assets/img/awca_5.png"></i>
+            <p class="text-uppercase text-center aboutUs_whyUs_icons_p">
                 Minimization of pollution
             </p>
         </div>

@@ -1,22 +1,19 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\Common\ImageController;
+use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
-Route::group(['prefix' => 'admin'], function () {
-    \TCG\Voyager\Facades\Voyager::routes();
+Route::get('/', function () {
+    return view('welcome');
 });
 
 # Glide Image Server
 Route::middleware('optimizeImages')->group(function () {
     // all images will be optimized automatically
-    Route::get('/img/{img}', 'Common\ImageController@show')->where('img', '.*')->name('cdn.image');
+    Route::get('/img/{img}', [ImageController::class, 'show'])->where('img', '.*')->name('cdn.image');
+});
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });

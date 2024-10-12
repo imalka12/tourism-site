@@ -194,7 +194,7 @@
             <p class="text-center" style="font-size: 11px; text-transform: uppercase;  color: #383838;">All Copyrights
                 Reserved by&nbsp;Explore Thaprobana(Pvt) Ltd. - {{ date('Y') }} |
 
-                Concept &amp; Design by <a href="https://www.mybooking.lk" target="_blank">Imalka Wijerathna</a>
+                Concept &amp; Design by <a href="#" target="_blank">Imalka Wijerathna</a>
             </p>
         </div>
     </div>

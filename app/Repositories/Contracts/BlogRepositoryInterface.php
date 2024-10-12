@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace App\Repositories\Contracts;
 
-interface BlogRepositoryInterface {
+interface BlogRepositoryInterface
+{
 
     /**
      * Get posts list - paginated
@@ -22,7 +23,7 @@ interface BlogRepositoryInterface {
      * @param string $slug
      * The URL slug value of the post entry
      * 
-     * @return App\Post $post
+     * @return Post $post
      */
     public function getPostBySlug($slug);
 
@@ -34,7 +35,7 @@ interface BlogRepositoryInterface {
      * @param string|int $id
      * ID of the post entry
      * 
-     * @return App\Post $post
+     * @return Post $post
      */
     public function getPostById($id);
 
@@ -43,7 +44,7 @@ interface BlogRepositoryInterface {
      * 
      * Get the list of category entries
      * 
-     * @return Collection<App\Category> $categories
+     * @return Collection<Category> $categories
      */
     public function getCategories();
 
@@ -58,7 +59,7 @@ interface BlogRepositoryInterface {
      * @param int $perPage
      * No. of posts per page
      * 
-     * @return Collection<App\Post> $posts
+     * @return Collection<Post> $posts
      * A collection of Posts
      */
     public function getPostsByCategorySlug($slug, $perPage = 3);
@@ -74,7 +75,7 @@ interface BlogRepositoryInterface {
      * @param int $perPage
      * No. of posts per page
      *
-     * @return Collection<App\Post> $posts
+     * @return Collection<Post> $posts
      * A collection of Posts
      */
     public function getPostsByCategoryId($id, $perPage = 3);
@@ -90,17 +91,17 @@ interface BlogRepositoryInterface {
      * @param string|int $id
      * Id of the Category
      * 
-     * @return App\Category $category
+     * @return Category $category
      */
     public function getCategoryById($id);
-    
+
     /**
      * Get category by slug
      * 
      * @param string $slug
      * Slug value of te category
      * 
-     * @return App\Category $category
+     * @return Category $category
      */
     public function getCategoryBySlug($slug);
 
@@ -113,7 +114,7 @@ interface BlogRepositoryInterface {
      * @param int $perPage
      * Posts per page
      * 
-     * @return Collection<App\Post> $posts
+     * @return Collection<Post> $posts
      */
     public function searchPosts($searchText, $perPage = 3);
 
@@ -122,8 +123,7 @@ interface BlogRepositoryInterface {
      * 
      * Get all blog posts as an unpaginated list
      * 
-     * @return Collection<App\Post> $posts
+     * @return Collection<Post> $posts
      */
     public function getAllBlogPosts();
-
 }

@@ -1,7 +1,7 @@
 @extends('layouts.web-mailable')
 
 @section('contents')
-    <h3>Tailor-made tour request</h3>
+    <h3>Customize tour request</h3>
 
 {{--     "arrival_date" => "2023-09-08"
   "arrival_time" => "00:00"

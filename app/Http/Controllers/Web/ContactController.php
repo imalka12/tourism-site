@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -46,8 +46,8 @@ class ContactController extends Controller
         ];
 
         Mail::send('mailables.contact-acknowledgment', $inquiryData, function ($message) use ($inquiryData) {
-            $responseFromName = config('ttll.emails.response.from.name');
-            $responseFromEmail = config('ttll.emails.response.from.email');
+            $responseFromName = config('site.emails.response.from.name');
+            $responseFromEmail = config('site.emails.response.from.email');
 
             $message->from($responseFromEmail, $responseFromName);
             $message->to($inquiryData['sender_email'], $inquiryData['sender_name']);
@@ -57,12 +57,12 @@ class ContactController extends Controller
 
         // send inquiry details internal email
         Mail::send('mailables.contact-request-details', $inquiryData, function ($message) use ($inquiryData) {
-            $responseFromName = config('ttll.emails.response.from.name');
-            $responseFromEmail = config('ttll.emails.response.from.email');
-            $inquiryToName = config('ttll.emails.contact.to.name');
-            $inquiryToEmail = config('ttll.emails.contact.to.email');
+            $responseFromName = config('site.emails.response.from.name');
+            $responseFromEmail = config('site.emails.response.from.email');
+            $inquiryToName = config('site.emails.contact.to.name');
+            $inquiryToEmail = config('site.emails.contact.to.email');
 
-//            $message->from($inquiryToEmail, $inquiryToName);
+            //            $message->from($inquiryToEmail, $inquiryToName);
             $message->from($responseFromEmail, $responseFromName);
             $message->to($inquiryToEmail, $inquiryToName);
             $message->replyTo($inquiryData['sender_email'], $inquiryData['sender_name']);
@@ -72,5 +72,4 @@ class ContactController extends Controller
         $__return = route('site.contact');
         return redirect($__return)->with('response_success', 'Your message submitted successfully. Please check your email for confirmation.');
     }
-
 }
